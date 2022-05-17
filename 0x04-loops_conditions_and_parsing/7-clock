@@ -4,7 +4,7 @@
 HOUR=0
 MIN=60
 
-while [ $HOUR -le 11 ]
+while [ $HOUR -le 12 ]
 do
 	if [ $MIN = 60 ]
 	then
