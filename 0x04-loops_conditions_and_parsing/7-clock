@@ -1,1 +1,18 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Prints 60 minutes for each hour up to 12 hours.
+
+HOUR=0
+MIN=60
+
+while [ $HOUR -le 11 ]
+do
+	if [ $MIN = 60 ]
+	then
+		echo "Hour: $HOUR"
+		HOUR=$(( $HOUR + 1 ))
+		MIN=$(( $MIN - 59 ))
+	else
+		echo "$MIN"
+		MIN=$(( $MIN + 1 ))
+	fi
+done
