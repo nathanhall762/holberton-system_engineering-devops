@@ -5,11 +5,11 @@ x=1
 
 while [ $x -le 100 ]
 do
-#	if multiple of 3 and 5
-#	then
-#		echo "FizzBuzz"
-#		((x++))
-	if [ $((x%3)) -eq 0 ]
+	if [[ $((x%3)) -eq 0 && $((x%5)) -eq 0 ]]
+	then
+		echo "FizzBuzz"
+		((x++))
+	elif [ $((x%3)) -eq 0 ]
 	then
 		echo "Fizz"
 		((x++))
