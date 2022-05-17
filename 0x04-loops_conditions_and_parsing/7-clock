@@ -9,10 +9,10 @@ do
 	if [ $MIN = 60 ]
 	then
 		echo "Hour: $HOUR"
-		HOUR=$(( $HOUR + 1 ))
-		MIN=$(( $MIN - 59 ))
+		HOUR=$(( HOUR + 1 ))
+		MIN=$(( MIN - 59 ))
 	else
 		echo "$MIN"
-		MIN=$(( $MIN + 1 ))
+		MIN=$(( MIN + 1 ))
 	fi
 done
