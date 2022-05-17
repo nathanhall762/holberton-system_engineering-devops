@@ -1,1 +1,24 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Lists numbers 1 through 100, naming multiples of 3, multiples of 5, and multiples of 3 and 5.
+
+x=1
+
+while [ $x -le 100 ]
+do
+#	if multiple of 3 and 5
+#	then
+#		echo "FizzBuzz"
+#		((x++))
+	if [ $((x%3)) -eq 0 ]
+	then
+		echo "Fizz"
+		((x++))
+	elif [ $((x%5)) -eq 0 ]
+	then
+		echo "Buzz"
+		((x++))
+	else
+	printf "%s\n" $x
+	((x++))
+	fi
+done
