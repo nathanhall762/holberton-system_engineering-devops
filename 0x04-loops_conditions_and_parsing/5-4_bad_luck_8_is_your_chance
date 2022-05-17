@@ -6,12 +6,12 @@ while [ $x -le 10 ]
 do
 	if [ $x -eq 4 ]; then
 		echo -e "Best School\nbad luck"
-		x=$(( $x + 1 ))
+		x=$(( x + 1 ))
 	elif [ $x -eq 8 ]; then
 		echo -e "Best Schooll\ngood luck"
-		x=$(( $x + 1 ))
+		x=$(( x + 1 ))
 	else
 		echo 'Best School'
-		x=$(( $x + 1 ))
+		x=$(( x + 1 ))
 	fi
 done
