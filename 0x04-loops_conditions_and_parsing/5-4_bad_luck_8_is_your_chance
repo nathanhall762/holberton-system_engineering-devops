@@ -2,13 +2,13 @@
 # Displays 'Best School' 10 times.
 
 x=1
-while [ $x -le 10 ]
+while [ $x -le 9 ]
 do
-	if [ $x -eq 4 ]; then
+	if [ $x -eq 3 ]; then
 		echo -e "Best School\nbad luck"
 		x=$(( x + 1 ))
-	elif [ $x -eq 8 ]; then
-		echo -e "Best Schooll\ngood luck"
+	elif [ $x -eq 7 ]; then
+		echo -e "good luck"
 		x=$(( x + 1 ))
 	else
 		echo 'Best School'
