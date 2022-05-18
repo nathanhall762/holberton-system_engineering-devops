@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Display lines containing bash in a ps aux command.
+# shellcheck disable=SC2009
+
+ps aux | grep bash
