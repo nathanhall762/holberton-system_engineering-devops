@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Script that displays PID of this script.
+
+pidof pidof
